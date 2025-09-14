@@ -1,12 +1,20 @@
+import React from "react";
+import Header from "./Components/Header";
 
-import './App.css';
+import Nav from "./Components/Nav";
+
+import Footer from "./Components/Footer";
 
 function App() {
   return (
-    <div className="App">
-     Thats mee for sure.
-    </div>
+    <>
+      <Header />
+      <Nav />
+
+      <Footer />
+    </>
   );
 }
 
 export default App;
+
