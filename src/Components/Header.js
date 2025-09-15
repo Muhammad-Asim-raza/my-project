@@ -1,15 +1,17 @@
 import React from "react";
-import logo from "../Logo.webp";  // logo is directly in src
+import logo from "../Logo.webp"; // keep as-is if Header.js is in src/components
 
 function Header() {
   return (
-    <header>
-      {/* <img src="./logo.webp" alt="Little Lemon Logo" /> */}
-         <img src={logo} alt="Logo" width="60" height="60" />
-      <h1>Little Lemon</h1>
-      <p>Chicago</p>
+    <header className="site-header">
+      <img src={logo} alt="Little Lemon Logo" className="logo" width="60" height="60" />
+      <div className="branding">
+        <h1>Little Lemon</h1>
+        <p>Chicago</p>
+      </div>
     </header>
   );
 }
 
 export default Header;
+

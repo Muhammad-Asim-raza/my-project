@@ -1,7 +1,7 @@
 import React from "react";
 function Footer() {
   return (
-    <footer>
+    <footer className="site-footer">
       <section>
         <h2>Navigation</h2>
         <ul>
@@ -30,3 +30,4 @@ function Footer() {
 }
 
 export default Footer;
+
