@@ -1,12 +1,23 @@
+// src/Components/BookingPage.js
 import React from "react";
+import BookingForm from "./BookingForm";
 
-function BookingPage() {
+function BookingPage({ availableTimes, dispatch, submitForm }) {
   return (
     <section className="booking">
       <h2>Reserve a Table</h2>
-      <p>Booking form will be added here soon!</p>
+      <BookingForm
+        availableTimes={availableTimes}
+        dispatch={dispatch}
+        submitForm={submitForm}
+      />
     </section>
   );
 }
 
 export default BookingPage;
+
+
+
+
+
